@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akhil Creates helps businesses grow with Meta Ads, lead generation, campaign strategy, and performance-focused digital marketing.">
+  <title>Akhil Creates | Meta Ads & Digital Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#08090c;--panel:#111319;--panel2:#171a22;--text:#f7f7fb;--muted:#a4a7b3;--red:#ff3d4f;--cyan:#59e1e8;--line:rgba(255,255,255,.1)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}
+    .brand{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:-.8px;font-size:1.2rem}.brand span{color:var(--red)}
+    .navlinks{display:flex;gap:27px;color:#d0d1d8;font-size:.92rem}.navlinks a:hover{color:var(--cyan)}
+    .pill{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(89,225,232,.4);padding:8px 13px;border-radius:999px;color:#d8fcff;font-size:.82rem;background:rgba(89,225,232,.07)}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+    .hero{display:grid;grid-template-columns:1.12fr .88fr;gap:50px;align-items:center;padding:90px 0 82px;min-height:590px}
+    .eyebrow{color:var(--cyan);font-size:.8rem;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+    h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.08;letter-spacing:-1.5px;margin:0}
+    h1{font-size:clamp(3rem,6vw,5.3rem);margin:19px 0 22px;max-width:720px}h1 em{font-style:normal;color:var(--red)}
+    .lead{color:var(--muted);font-size:1.08rem;max-width:580px;margin:0 0 30px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;border-radius:10px;font-weight:700;font-size:.93rem;transition:.2s}
+    .btn-primary{background:var(--red);color:white;box-shadow:0 8px 30px rgba(255,61,79,.18)}.btn-primary:hover{transform:translateY(-2px);background:#ff5262}
+    .btn-outline{border:1px solid var(--line);background:rgba(255,255,255,.025)}.btn-outline:hover{border-color:var(--cyan);color:var(--cyan)}
+    .visual{position:relative;min-height:400px;display:grid;place-items:center}
+    .orb{position:absolute;width:290px;height:290px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,61,79,.55),rgba(255,61,79,.08) 45%,transparent 70%);filter:blur(4px)}
+    .ad-card{position:relative;width:min(100%,390px);padding:25px;border:1px solid rgba(255,255,255,.13);border-radius:22px;background:linear-gradient(145deg,rgba(28,31,42,.95),rgba(13,15,21,.92));box-shadow:0 25px 80px rgba(0,0,0,.5);transform:rotate(2deg)}
+    .card-top{display:flex;justify-content:space-between;align-items:center;color:#c7cad4;font-size:.8rem}.meta-icon{width:33px;height:33px;border-radius:10px;background:linear-gradient(135deg,#4b9cff,#9c5cff);display:grid;place-items:center;font-weight:700;color:white}
+    .ad-card h3{font-size:1.65rem;margin:24px 0 9px;letter-spacing:-.7px}.ad-card p{color:var(--muted);font-size:.9rem;margin:0 0 22px}
+    .metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metric{background:rgba(255,255,255,.045);padding:14px;border:1px solid rgba(255,255,255,.06);border-radius:12px}.metric small{display:block;color:var(--muted);font-size:.75rem}.metric strong{font-family:"Space Grotesk",sans-serif;font-size:1.35rem}.trend{color:var(--cyan);font-size:.75rem;margin-top:2px}
+    .chart{height:72px;display:flex;align-items:end;gap:8px;margin-top:20px;padding:0 3px}.chart i{display:block;flex:1;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,var(--red),rgba(255,61,79,.15))}
+    .float-tag{position:absolute;right:-3px;bottom:32px;background:#10151a;border:1px solid rgba(89,225,232,.3);border-radius:12px;padding:13px 16px;box-shadow:0 12px 35px #0008;font-size:.83rem}.float-tag b{display:block;color:var(--cyan);font-size:1rem}
+    section{padding:75px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);max-width:600px}.section-head p{max-width:390px;color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service,.project,.step{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:24px}.service .num{font-family:"Space Grotesk";font-size:.82rem;color:var(--red)}.service h3{font-size:1.25rem;letter-spacing:-.4px;margin:23px 0 10px}.service p,.project p,.step p{color:var(--muted);font-size:.94rem;margin:0}
+    .service:hover,.project:hover{border-color:rgba(89,225,232,.4);transform:translateY(-3px);transition:.2s}
+    .band{background:linear-gradient(110deg,rgba(255,61,79,.09),rgba(89,225,232,.055));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:16px}.project{padding:0;overflow:hidden}.project-art{height:200px;padding:23px;background:radial-gradient(circle at 80% 10%,rgba(255,61,79,.28),transparent 38%),linear-gradient(140deg,#191c27,#0d0f14);display:flex;flex-direction:column;justify-content:space-between}.project-art.cyan{background:radial-gradient(circle at 80% 10%,rgba(89,225,232,.24),transparent 38%),linear-gradient(140deg,#191c27,#0d0f14)}
+    .project-art .tag{font-size:.75rem;color:#d8dbe3;border:1px solid #ffffff28;padding:5px 9px;border-radius:99px;width:max-content}.mock-bars{display:flex;align-items:end;gap:8px;height:78px}.mock-bars span{width:12%;border-radius:4px 4px 0 0;background:linear-gradient(var(--red),#61212b)}.cyan .mock-bars span{background:linear-gradient(var(--cyan),#24565a)}
+    .project-body{padding:22px}.project-body h3{font-size:1.35rem;margin-bottom:10px;letter-spacing:-.5px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.chips span{font-size:.75rem;color:#c7cad4;border:1px solid var(--line);padding:5px 9px;border-radius:7px}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{padding:22px}.step .number{font-family:"Space Grotesk";font-size:2rem;color:var(--cyan);margin-bottom:18px}.step h3{font-size:1.15rem;margin-bottom:9px;letter-spacing:-.4px}
+    .cta{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:38px;border-radius:22px;border:1px solid rgba(255,61,79,.25);background:radial-gradient(circle at 90% 0%,rgba(255,61,79,.13),transparent 38%),var(--panel)}
+    .cta h2{font-size:clamp(2rem,4vw,3rem);max-width:620px;margin:12px 0}.cta p{color:var(--muted);margin:0}
+    footer{padding:30px 0 40px;border-top:1px solid var(--line);margin-top:70px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;color:var(--muted);font-size:.85rem}.socials{display:flex;gap:17px}.socials a:hover{color:var(--cyan)}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:65px 0 45px;gap:10px}.visual{min-height:360px}.services,.process{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.cta{display:block;padding:28px}.cta .btn{margin-top:22px}.navlinks{gap:13px;font-size:.82rem}.navlinks .optional{display:none}}
+    @media(max-width:480px){.wrap{width:min(100% - 28px,1120px)}.nav{padding:17px 0}.navlinks{gap:10px}.navlinks a{font-size:.78rem}.hero{padding-top:50px}h1{font-size:3.05rem}.visual{min-height:330px}.ad-card{padding:19px}.float-tag{right:0;bottom:13px}.section-head h2{font-size:2.2rem}.footer-row{align-items:flex-start;flex-direction:column}}
+
+    /* Motion-rich visual layer */
+    body{overflow-x:hidden;background-image:radial-gradient(ellipse at 12% 8%,rgba(255,61,79,.10),transparent 32%),radial-gradient(ellipse at 88% 28%,rgba(89,225,232,.07),transparent 28%)}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.17;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 80%)}
+    .nav{animation:navDrop .8s cubic-bezier(.2,.8,.2,1) both}
+    .brand{position:relative;display:inline-block;transition:transform .35s ease;text-shadow:0 0 25px rgba(255,61,79,.1)}.brand:hover{transform:translateY(-2px) scale(1.025)}
+    .brand span{background:linear-gradient(90deg,#ff3d4f,#ff8b67,#59e1e8,#ff3d4f);background-size:250% auto;background-clip:text;-webkit-background-clip:text;color:transparent;animation:brandFlow 6s linear infinite}
+    .hero>div:first-child{animation:heroIn .9s .08s cubic-bezier(.2,.8,.2,1) both}
+    h1{background:linear-gradient(100deg,#fff 5%,#d9e3ee 45%,#ff7582 75%,#fff 100%);background-size:220% auto;background-clip:text;-webkit-background-clip:text;color:transparent;animation:titleShine 8s linear infinite}
+    h1 em{color:#ff3d4f;background:linear-gradient(90deg,#ff3d4f,#ff9a82,#59e1e8);background-size:200% auto;background-clip:text;-webkit-background-clip:text;animation:brandFlow 5s linear infinite}
+    .visual{perspective:1000px;animation:heroIn 1s .18s cubic-bezier(.2,.8,.2,1) both}
+    .orb{animation:orbPulse 7s ease-in-out infinite alternate;transform-origin:center}
+    .ad-card{transform:rotateY(-8deg) rotateX(3deg) rotateZ(1deg);transform-style:preserve-3d;transition:transform .25s ease,box-shadow .35s ease;animation:cardFloat 6s ease-in-out infinite;box-shadow:0 30px 100px rgba(0,0,0,.5),0 0 45px rgba(255,61,79,.06)}
+    .ad-card:hover{box-shadow:0 35px 100px rgba(0,0,0,.55),0 0 50px rgba(89,225,232,.12)}
+    .float-tag{animation:tagFloat 4.5s ease-in-out infinite}
+    .chart i{transform-origin:bottom;animation:barRise 1.2s cubic-bezier(.2,.8,.2,1) both}.chart i:nth-child(2){animation-delay:.08s}.chart i:nth-child(3){animation-delay:.16s}.chart i:nth-child(4){animation-delay:.24s}.chart i:nth-child(5){animation-delay:.32s}.chart i:nth-child(6){animation-delay:.4s}.chart i:nth-child(7){animation-delay:.48s}.chart i:nth-child(8){animation-delay:.56s}
+    .pill{animation:pillGlow 3.5s ease-in-out infinite}
+    .btn{position:relative;overflow:hidden;isolation:isolate;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.btn:before{content:"";position:absolute;inset:0;z-index:-1;transform:translateX(-130%) skewX(-20deg);background:linear-gradient(100deg,transparent,rgba(255,255,255,.24),transparent);transition:transform .7s ease}.btn:hover:before{transform:translateX(130%) skewX(-20deg)}.btn-primary:hover{box-shadow:0 12px 40px rgba(255,61,79,.3);transform:translateY(-4px) scale(1.02)}.btn-outline:hover,.btn-secondary:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(89,225,232,.08)}
+    .service,.project,.step{position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s ease,box-shadow .35s ease}.service:before,.step:before{content:"";position:absolute;width:170px;height:170px;right:-95px;top:-105px;border-radius:50%;background:radial-gradient(circle,rgba(89,225,232,.12),transparent 70%);transition:transform .5s ease}.service:hover,.project:hover,.step:hover{transform:translateY(-7px);border-color:rgba(89,225,232,.45);box-shadow:0 20px 55px rgba(0,0,0,.22)}.service:hover:before,.step:hover:before{transform:scale(1.6)}
+    .project-art{position:relative;isolation:isolate}.project-art:after{content:"";position:absolute;inset:-60% -30%;z-index:-1;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.055) 50%,transparent 65%);transform:translateX(-55%);animation:artSweep 7s ease-in-out infinite}.mock-bars span{transform-origin:bottom;animation:barRise 1.3s cubic-bezier(.2,.8,.2,1) both}.mock-bars span:nth-child(2){animation-delay:.07s}.mock-bars span:nth-child(3){animation-delay:.14s}.mock-bars span:nth-child(4){animation-delay:.21s}.mock-bars span:nth-child(5){animation-delay:.28s}.mock-bars span:nth-child(6){animation-delay:.35s}.mock-bars span:nth-child(7){animation-delay:.42s}
+    .cta{position:relative;overflow:hidden;transition:border-color .35s ease,transform .35s ease}.cta:after{content:"";position:absolute;width:280px;height:280px;right:-130px;top:-170px;border-radius:50%;border:1px solid rgba(255,61,79,.16);box-shadow:0 0 0 28px rgba(255,61,79,.025),0 0 0 58px rgba(89,225,232,.02);animation:ringDrift 12s linear infinite;pointer-events:none}.cta:hover{border-color:rgba(89,225,232,.35)}
+    .reveal{opacity:0;transform:translateY(28px) scale(.99);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}.reveal.is-visible{opacity:1;transform:translateY(0) scale(1)}
+    .services .service:nth-child(2),.projects .project:nth-child(2),.process .step:nth-child(2){transition-delay:.08s}.services .service:nth-child(3),.process .step:nth-child(3){transition-delay:.16s}
+    .eyebrow{position:relative;display:inline-block}.eyebrow:after{content:"";display:block;height:1px;width:42px;margin-top:8px;background:linear-gradient(90deg,var(--red),transparent);transform-origin:left;animation:lineGrow 1.2s .4s both}
+    .socials a,.navlinks a{transition:color .25s ease,transform .25s ease}.socials a:hover,.navlinks a:hover{transform:translateY(-2px)}
+    @keyframes navDrop{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes heroIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes brandFlow{to{background-position:250% center}}
+    @keyframes titleShine{to{background-position:220% center}}
+    @keyframes orbPulse{from{transform:scale(.92) rotate(-8deg);opacity:.65}to{transform:scale(1.12) rotate(8deg);opacity:1}}
+    @keyframes cardFloat{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -12px;rotate:.5deg}}
+    @keyframes tagFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes barRise{from{transform:scaleY(.05);opacity:.3}to{transform:scaleY(1);opacity:1}}
+    @keyframes pillGlow{0%,100%{box-shadow:0 0 0 rgba(89,225,232,0)}50%{box-shadow:0 0 24px rgba(89,225,232,.08)}}
+    @keyframes artSweep{0%,45%{transform:translateX(-65%)}75%,100%{transform:translateX(65%)}}
+    @keyframes ringDrift{to{transform:rotate(360deg)}}
+    @keyframes lineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+    @media(max-width:800px){.ad-card{transform:none;animation:cardFloat 6s ease-in-out infinite}.cta:after{opacity:.5}}
+
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">AKHIL <span>CREATES.</span></a>
+      <div class="navlinks">
+        <a href="#services">Services</a><a href="#work">Work</a><a href="#process" class="optional">Process</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <div class="pill"><span class="dot"></span> META ADS & DIGITAL MARKETING</div>
+        <h1>Turn ad spend into <em>real growth.</em></h1>
+        <p class="lead">Helping businesses reach the right people, generate quality leads, and grow with focused Meta advertising on Facebook and Instagram.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Let's grow your business <span>↗</span></a>
+          <a class="btn btn-outline" href="#work">Explore services</a>
+        </div>
+      </div>
+      <div class="visual" aria-label="Illustration of an advertising performance dashboard">
+        <div class="orb"></div>
+        <div class="ad-card">
+          <div class="card-top"><span style="display:flex;align-items:center;gap:10px"><span class="meta-icon">∞</span> Campaign overview</span><span>● Live concept</span></div>
+          <h3>Performance that<br>moves your business.</h3>
+          <p>Clear strategy. Smart targeting. Better decisions.</p>
+          <div class="metric-grid">
+            <div class="metric"><small>Campaign focus</small><strong>Leads</strong><div class="trend">Quality first ↗</div></div>
+            <div class="metric"><small>Optimization</small><strong>Ongoing</strong><div class="trend">Test & improve ↗</div></div>
+          </div>
+          <div class="chart"><i style="height:30%"></i><i style="height:45%"></i><i style="height:38%"></i><i style="height:58%"></i><i style="height:51%"></i><i style="height:72%"></i><i style="height:64%"></i><i style="height:92%"></i></div>
+        </div>
+        <div class="float-tag">Campaign mindset<b>Test · Learn · Scale</b></div>
+      </div>
+    </section>
+
+    <section class="band" id="services">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">What I do</div><h2>Ads with a clear purpose.</h2></div><p>Every campaign starts with your business goal, your audience, and a plan to measure what matters.</p></div>
+        <div class="services">
+          <article class="service"><div class="num">01 / STRATEGY</div><h3>Meta Ads Strategy</h3><p>Campaign planning for Facebook and Instagram, built around your offer, audience, and goals.</p></article>
+          <article class="service"><div class="num">02 / LEAD GENERATION</div><h3>Lead Generation</h3><p>Reach potential customers and create a simple path from ad click to enquiry.</p></article>
+          <article class="service"><div class="num">03 / OPTIMIZATION</div><h3>Campaign Optimization</h3><p>Review campaign performance, test creative ideas, and use results to guide improvements.</p></article>
+          <article class="service"><div class="num">04 / CREATIVE</div><h3>Ad Creative Direction</h3><p>Develop clear ad messaging and creative concepts that connect with the right audience.</p></article>
+          <article class="service"><div class="num">05 / TRACKING</div><h3>Performance Tracking</h3><p>Monitor spend, leads, cost per lead, and conversion trends for clearer decisions.</p></article>
+          <article class="service"><div class="num">06 / REPORTING</div><h3>Simple Reporting</h3><p>Understand what is working through straightforward updates and actionable insights.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="work">
+      <div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Built around measurable outcomes.</h2></div><p>Use this section to showcase real campaigns, creative tests, and results as you build your client portfolio.</p></div>
+      <div class="projects">
+        <article class="project">
+          <div class="project-art"><span class="tag">CASE STUDY 01 · LEAD GEN</span><div class="mock-bars"><span style="height:25%"></span><span style="height:38%"></span><span style="height:32%"></span><span style="height:55%"></span><span style="height:47%"></span><span style="height:75%"></span><span style="height:92%"></span></div></div>
+          <div class="project-body"><h3>Lead Generation Campaign</h3><p>Show how audience targeting, creative testing, and lead quality checks supported a business goal.</p><div class="chips"><span>Audience testing</span><span>Lead quality</span><span>Cost per lead</span></div></div>
+        </article>
+        <article class="project">
+          <div class="project-art cyan"><span class="tag">CASE STUDY 02 · SALES</span><div class="mock-bars"><span style="height:40%"></span><span style="height:28%"></span><span style="height:49%"></span><span style="height:43%"></span><span style="height:65%"></span><span style="height:77%"></span><span style="height:88%"></span></div></div>
+          <div class="project-body"><h3>Sales & Retargeting Campaign</h3><p>Show how retargeting, ad messaging, and performance reviews helped guide purchase-focused campaigns.</p><div class="chips"><span>Retargeting</span><span>ROAS tracking</span><span>Creative testing</span></div></div>
+        </article>
+      </div>
+      <p style="color:var(--muted);font-size:.82rem;margin-top:16px">Portfolio note: These are sample case-study layouts, not claimed client results. Replace with your real campaign details and verified metrics.</p>
+    </section>
+
+    <section class="band" id="process">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">How I work</div><h2>A simple, focused process.</h2></div><p>Clear communication at every step, from the first conversation to ongoing improvements.</p></div>
+        <div class="process">
+          <article class="step"><div class="number">01</div><h3>Understand</h3><p>Learn about your business, audience, offer, budget, and what success means to you.</p></article>
+          <article class="step"><div class="number">02</div><h3>Launch & learn</h3><p>Set up the campaign plan, review the early data, and test ideas carefully.</p></article>
+          <article class="step"><div class="number">03</div><h3>Improve</h3><p>Track performance, share clear updates, and make changes based on evidence.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <div class="cta">
+        <div><div class="eyebrow">Let's talk</div><h2>Ready to grow your business with Meta Ads?</h2><p>Tell me about your business and what you want your campaigns to achieve.</p></div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="tel:+919865728202">Call: 9865728202 ↗</a>
+          <a class="btn btn-secondary" href="https://wa.me/916385185779?text=Hi%20Akhil%20Creates%2C%20I%27m%20interested%20in%20your%20Meta%20Ads%20services." target="_blank" rel="noopener">WhatsApp: 6385185779 ↗</a>
+          <a class="btn btn-secondary" href="https://www.facebook.com/akhilcreates/" target="_blank" rel="noopener">Facebook Page ↗</a>
+          <a class="btn btn-secondary" href="https://www.instagram.com/akhil_.creates/" target="_blank" rel="noopener">Instagram Page ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-row">
+      <a class="brand" href="#home">AKHIL <span>CREATES.</span></a>
+      <span>Meta Ads · Lead Generation · Digital Marketing</span>
+      <div class="socials">
+        <a href="https://www.facebook.com/akhilcreates/" target="_blank" rel="noopener">Facebook ↗</a>
+        <a href="https://www.instagram.com/akhil_.creates/" target="_blank" rel="noopener">Instagram ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Lightweight scroll reveals and subtle pointer parallax; no external animation library needed.
+    (() => {
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const revealTargets = document.querySelectorAll('main section, .section-head, .service, .project, .step, .cta, footer');
+      revealTargets.forEach((el, i) => {
+        if (!el.closest('.hero')) el.classList.add('reveal');
+        if (el.classList.contains('service') || el.classList.contains('project') || el.classList.contains('step')) el.style.transitionDelay = `${(i % 3) * 70}ms`;
+      });
+      if (!reduceMotion && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+        }), { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      } else document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
+      const visual = document.querySelector('.visual');
+      const card = document.querySelector('.ad-card');
+      if (visual && card && !reduceMotion && window.matchMedia('(pointer:fine)').matches) {
+        visual.addEventListener('pointermove', e => {
+          const r = visual.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width - .5;
+          const y = (e.clientY - r.top) / r.height - .5;
+          card.style.transform = `rotateY(${x * 10 - 5}deg) rotateX(${-y * 8 + 2}deg) rotateZ(${x * 2}deg)`;
+        });
+        visual.addEventListener('pointerleave', () => card.style.transform = '');
+      }
+    })();
+  </script>
+
+</body>
+</html>
